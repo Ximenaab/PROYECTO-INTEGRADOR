@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozzafiato - Un Viaje de Sabor</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a href="#hero">
+        <img src="IMG/vector mano.png" alt="vectormano">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+    <!-- HACER QUE CADA BOTON LLEVE A SU RESPECTIVA DIRECCION -->
+
+    <a class="nav-link" href="#sobre-nosotros">Nosotros</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#servicios">Servicios</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Galeria">Galería</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Productos">Productos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Contacto">Contacto</a>
+  </li>
+  <li class="nav-item">
+  <button id="btn-auth" class="nav-link" style="border:none;background:transparent;cursor:pointer">
+    Acceder
+  </button>
+</li>
+
+</ul>
+
+      <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div> -->
+  </div>
+</nav>
+    </header>
+
+    <main>
+       <section id="hero" class="hero">
+  <div class="hero-video-container">
+    <video autoplay loop muted poster="trigo" src="VIDEO/49549-459598226.mp4"></video>
+  </div>
+  <div class="hero-content">
+    <h1>¡Déjate Envolver por el Sabor de Mozzafiato!</h1>
+    <p>Descubre la pasión en cada creación, horneada especialmente para ti.</p>
+    <a href="https://wa.me/3502789083" target="_blank" class="whatsapp-button">
+      <img src="IMG/icons8-whatsapp-100.png" alt=""> ¡Quiero más información!
+    </a>
+  </div>
+</section>
+<!-- nosotros -->
+<section id="sobre-nosotros" class="sobre-nosotros">
+  <div class="nosotros-contenido">
+    <img src="IMG/historia 1.jpg" alt="Nuestro equipo" height: 100px; class="fotohistoria">
+    <div class="texto-nosotros">
+
+      <h2>Nosotros</h2>
+      <section class="timeline-horizontal">
+  <h2>Historia de Nuestra Marca</h2>
+  <div class="timeline-container">
+    <div class="timeline-item">
+      <div class="icon">🌾</div>
+      <h3>2020</h3>
+      <p>Iniciamos con inspiración natural, sembrando la idea.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="icon">🍴</div>
+      <h3>2021</h3>
+      <p>Mejoramos técnicas y herramientas de panadería.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="icon">🔥</div>
+      <h3>2023</h3>
+      <p>Primer horno en producción artesanal.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="icon">🥖</div>
+      <h3>2025</h3>
+      <p>Reconocidos por nuestro pan artesanal.</p>
+    </div>
+  </div>
+</section>
+
+   
+  </div>
+</section>
+   <section id="Productos" class="productos">
+  <div class="productos-head">
+    <h2>Productos</h2>
+  </div>
+
+  <!-- Grid de productos -->
+  <div class="productos-grid">
+
+
+    <!-- Tarjeta 3 -->
+    <article class="prod-card" data-name="Pan masa madre" data-price="16000">
+      <img src="IMG/panentero.png" alt="Pan masa madre" class="prod-img">
+      <div class="prod-info">
+        <h3 class="prod-name">Hogaza Masa Madre</h3>
+        <p class="prod-price">$16.000</p>
+        <button class="btn-add">Añadir al carrito</button>
+      </div>
+    </article>
+
+    <!-- Tarjeta 4 -->
+    <article class="prod-card" data-name="Pan de chocolate y pistachos" data-price="20000">
+      <img src="IMG/panchoco 1.jpg" alt="Pan de chocolate y pistachos" class="prod-img">
+      <div class="prod-info">
+        <h3 class="prod-name">Pan de chocolate y pistachos</h3>
+        <p class="prod-price">$20.000</p>
+        <button class="btn-add">Añadir al carrito</button>
+      </div>
+    </article>
+
+
+    <!-- Tarjeta 6 -->
+    <article class="prod-card" data-name="Rollos de canela glaseados" data-price="35000">
+      <img src="IMG/rollosplato.png" alt="Rollos de canela glaseados" class="prod-img">
+      <div class="prod-info">
+        <h3 class="prod-name">Rollos de canela glaseados</h3>
+        <p class="prod-price">$35.000</p>
+        <button class="btn-add">Añadir al carrito</button>
+      </div>
+    </article>
+ 
+
+      <!-- Tarjeta 7 -->
+          <article class="prod-card" data-name="Pan nutrimix" data-price="25000">
+      <img src= "IMG/panintegral.png" alt="Pan nutrimix" class="prod-img">
+      <div class="prod-info">
+        <h3 class="prod-name">Pan Nutrimix</h3>
+        <p class="prod-price">$25.000</p>
+        <button class="btn-add">Añadir al carrito</button>
+      </div>
+    </article>
+
+
+   <!-- Tarjeta 8 -->
+          <article class="prod-card" data-name="Pan cebolla y 3 Quesos" data-price="25000">
+      <img src= "IMG/pantresquesos 1.jpg" alt="Pan cebolla y 3 Quesos" class="prod-img">
+      <div class="prod-info">
+        <h3 class="prod-name">Pan Cebolla y 3 Quesos</h3>
+        <p class="prod-price">$25.000</p>
+        <button class="btn-add">Añadir al carrito</button>
+      </div>
+    </article>
+  
+
+     <!-- Tarjeta 9 -->
+          <article class="prod-card" data-name="Torta Colibrí" data-price="25000">
+      <img src= "IMG/tortaxime.png" alt="Torta Colibrí" class="prod-img">
+      <div class="prod-info">
+        <h3 class="prod-name">Torta Colibrí</h3>
+        <p class="prod-price">$25.000</p>
+        <button class="btn-add">Añadir al carrito</button>
+      </div>
+    </article>
+
+      <!-- Tarjeta 10 -->
+          <article class="prod-card" data-name="Torta Envinada" data-price="120000">
+      <img src= "IMG/tortafrutas.png" alt="Torta Envinada" class="prod-img">
+      <div class="prod-info">
+        <h3 class="prod-name">Torta Envinada</h3>
+        <p class="prod-price">$120.000</p>
+        <button class="btn-add">Añadir al carrito</button>
+      </div>
+    </article>
+  </div>
+   
+
+
+
+ 
+
+  <!-- Texto adicional de precios -->
+  <aside class="productos-nota">
+    <h4>Precios y presentaciones</h4>
+    <p>
+      Todos nuestros productos son artesanales y se hornean por encargo. 
+      Los precios varían según tamaño y presentaciones especiales.
+      Si necesitas cantidades para eventos o catering, contáctanos y te asesoramos.
+    </p>
+  </aside>
+</section>
+
+<!-- Carrito flotante -->
+<div id="cart-widget" class="cart-widget">
+  <button id="cart-toggle" class="cart-toggle" aria-label="Abrir carrito">
+    🧺 <span id="cart-count" class="cart-count">0</span>
+  </button>
+
+  <div id="cart-panel" class="cart-panel hidden">
+    <div class="cart-head">
+      <button id="cart-close" class="cart-close" aria-label="Cerrar">×</button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+      <!-- items dinámicos -->
+    </div>
+
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>Total:</span> <strong id="cart-total">$0</strong>
+      </div>
+      <button id="cart-whatsapp" class="cart-wa">Finalizar pedido por WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+
+        <section id="servicios" class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio">
+                  <img src="IMG/clasespanad 1.png" alt="" class="imgservi">
+                    <h3>Cursos Personalizados</h3>
+                    <p>Aprende los secretos de la panadería artesanal con nuestros cursos a tu medida.</p>
+                </div>
+                <div class="servicio">
+                  <img src="IMG/grupales 1.png" alt="" class="imgservi">
+                    <h3>Talleres Grupales</h3>
+                    <p>Comparte la alegría de hornear en nuestros talleres llenos de sabor y aprendizaje.</p>
+                </div>
+                <div class="servicio">
+                  <img src="IMG/catering 1.png" alt="" class="imgservi">
+                    <h3>Catering Exclusivo</h3>
+                    <p>Sorprende a tus invitados con la exquisitez de Mozzafiato en tus eventos.</p>
+                </div>
+            </div>
+        </section>
+
+
+<section id="Galeria" class="nosotros">
+  <h2>Galería </h2>
+  <h3>¡Arte en nuestros hornos!</h3>
+
+  <div class="car">
+    <button class="nav" data-dir="-1" aria-label="Anterior">‹</button>
+
+    <!-- Reutilizo tu clase .galeria-nosotros como viewport -->
+    <div class="galeria-nosotros vp">
+      <img src="IMG/panesymasamadre 1.jpg" alt="Manos expertas horneando" class="img-galeria">
+      <img src="IMG/rodillo.jpg" alt="Manos expertas horneando" class="img-galeria">
+      <img src="IMG/masa madre 1.jpg" alt="Selección de ingredientes" class="img-galeria">
+      <img src="IMG/Masa madre manos.jpg" alt="El inicio de nuestra masa" class="img-galeria">
+      <img src="IMG/mm pan.jpg" alt="Selección de ingredientes" class="img-galeria">
+      <img src="IMG/cestopan.png" alt="El aroma que enamora" class="img-galeria">
+      <img src="IMG/pantresquesos 1.jpg" alt="Nuestra vitrina de delicias" class="img-galeria">
+      <img src="IMG/pangirasol 1.jpg" alt="Nuestra vitrina de delicias" class="img-galeria">
+      <img src="IMG/Migote.jpg" alt="El aroma que enamora" class="img-galeria">
+    </div>
+
+    <button class="nav" data-dir="1" aria-label="Siguiente">›</button>
+  </div>
+</section>
+
+<link rel="stylesheet" href="galeria.css">
+<script src="galeria.js"></script>
+
+     
+            <!-- EN ESTA PARTE DEL CODIGO VOY A REALIZAR PRODUCTOS, precio y fotos -->
+
+        <section id="pedido" class="pedido">
+            <h2>¡Disfrutar de Mozzafiato es muy fácil!</h2>
+            <div class="pedido-steps">
+                <div class="step step-bg1">
+                    <div class="step-icon" style="background-color: #F2B90C;">1</div>
+                    <h3>Explora y Elige</h3>
+                    <p>Visita nuestra <a href="#comprar" style="color: #4B2473; font-weight: bold;">sección de productos</a> y descubre todas nuestras delicias.</p>
+                </div>
+                <div class="step step-bg2">
+                    <div class="step-icon" style="background-color: #8C3503;">2</div>
+                    <h3>Haz tu pedido</h3>
+                    <p>Ve a Whatssapp y selecciona los productos de tu interes  .</p>
+                </div>
+                <div class="step step-bg3">
+                    <div class="step-icon" style="background-color: #F2A20C;">3</div>
+                    <h3>Completa tu Pedido</h3>
+                    <p>Brindanos tus datos de envío y elige tu método de pago seguro.</p>
+                </div>
+                <div class="step step-bg4">
+                    <div class="step-icon" style="background-color: #4B2473;">4</div>
+                    <h3>¡A Disfrutar!</h3>
+                    <p>Prepara tu mesa, tu pedido llegará pronto a tu hogar en Medellín.</p>
+                </div>
+            </div>
+            <div class="delivery-info">
+                <h3>Tiempos de Entrega en Medellín</h3>
+                <p>En Mozzafiato, horneamos con dedicación y entregamos con eficiencia. Generalmente, tus productos llegarán entre <span style="font-weight: bold; color: #F2B90C;">24 y 48 horas</span> después de confirmar tu pedido, dependiendo de tu ubicación.</p>
+            </div>
+              <!-- Botón flotante de WhatsApp -->
+            <a href="https://wa.me/573502789083"
+             class="whatsapp-float logo-nav-nik"
+             target="_blank"
+             rel="noopener noreferrer">
+             <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+        </section>
+     
+
+    <footer>
+        <div class="footer-links">
+            <div class="rrss">
+                <h3>¡Síguenos!</h3>
+                <ul>
+                    
+                    <li>Instagram</li>
+                    <li><a href="https://www.instagram.com/mozzafiatopan/" target="_blank"><img src="IMG/instagram.png" alt="" class="iconoinsta"></a></li>
+                   
+                </ul>
+            </div>
+            <div class="contacto">
+                <h3>Contáctanos</h3>
+                <p style="color: #F2A20C;">¿Tienes alguna duda?</p>
+                <p>Llámanos: <span style="color: #F2B90C;">+57 3502789083</span></p>
+                <p>Escríbenos: <span style="color: #F2B90C;">info@mozzafiato.com</span></p>
+             
+            </div>
+            <div class="navegacion">
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#galería">Galería</a></li>
+                    <li><a href="#comprar">Comprar</a></li>
+                </ul>
+            </div>
+        </div>
+        <p style="color: #F2A20C;">&copy; 2025 Mozzafiato - Cada bocado es una obra de arte.</p>
+    </footer>
+
+    
+    <!-- Modal Auth -->
+<div id="auth-modal" class="auth-hidden" aria-hidden="true">
+  <div class="auth-card">
+    <button id="auth-close" class="auth-close" aria-label="Cerrar">&times;</button>
+
+    <div class="auth-tabs">
+      <button class="auth-tab auth-active" data-tab="login">Iniciar sesión</button>
+      <button class="auth-tab" data-tab="register">Registrarse</button>
+    </div>
+
+    <form id="login-form" data-panel="login" class="auth-panel">
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" required placeholder="tu@correo.com">
+
+      <label for="login-pass">Contraseña</label>
+      <input type="password" id="login-pass" required placeholder="••••••••">
+
+      <button type="submit" class="auth-btn primary">Entrar</button>
+
+      <p class="auth-hint">
+        Tip admin: <code>admin@site.com</code> / <code>Admin123*</code>
+      </p>
+    </form>
+
+    <form id="register-form" data-panel="register" class="auth-panel auth-hidden">
+      <label for="reg-name">Nombre</label>
+      <input type="text" id="reg-name" required placeholder="Tu nombre">
+
+      <label for="reg-email">Email</label>
+      <input type="email" id="reg-email" required placeholder="tu@correo.com">
+
+      <label for="reg-pass">Contraseña</label>
+      <input type="password" id="reg-pass" required placeholder="Mínimo 6 caracteres">
+
+      <button type="submit" class="auth-btn">Crear cuenta</button>
+    </form>
+
+    <p id="auth-msg" class="auth-msg"></p>
+  </div>
+  <div class="auth-backdrop"></div>
+</div>
+<script src="/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.car {
+  position: relative;
+  width: min(1100px, 92vw);
+  margin: 20px auto;
+  overflow: visible; /* deja ver las flechas por fuera */
+}
+
+.vp {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: auto;
+  gap: 1cm;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  scrollbar-width: none;
+}
+.vp::-webkit-scrollbar { display: none; }
+
+.img-galeria {
+  flex: 0 0 auto;
+  width: clamp(140px, 18vw, 220px);
+  height: clamp(140px, 18vw, 220px);
+  aspect-ratio: 1 / 1;
+  border-radius: 10%;
+  object-fit: cover;
+  background: transparent;
+  transition: transform .25s ease, filter .25s ease;
+}
+.img-galeria:hover {
+  transform: scale(1.03);
+  filter: brightness(1) saturate(1.05);
+}
+
+/* --- Flechas externas, sin fondo --- */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #F2B90C;         /* amarillo marca */
+  font-size: 52px;
+  cursor: pointer;
+  opacity: .1;
+  transition: transform .2s ease, opacity .2s ease;
+  z-index: 10;
+}
+
+/* Izquierda y derecha fuera del carrusel */
+.nav[data-dir="-1"] { left: -60px; }
+.nav[data-dir="1"]  { right: -60px; }
+
+.nav:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.15);
+}
+
+.nav { z-index: 10; }
+.nav[data-dir="-1"] { left: 8px; }
+.nav[data-dir="1"]  { right: 8px; }
+.nav:hover { background: rgba(0,0,0,.5); }

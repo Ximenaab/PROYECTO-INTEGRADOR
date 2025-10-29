@@ -1,0 +1,42 @@
+
+:root{
+  --pri:#4B2473; --sec:#F2B90C; --mut:#666; --bg:#f6f6f9; --card:#fff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111}
+.dash-wrap{max-width:1200px;margin:32px auto;padding:16px}
+.dash-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+h1{font-size:28px;margin:0}
+.btn{padding:10px 12px;border-radius:10px;border:1px solid var(--pri);cursor:pointer;background:var(--pri);color:#fff;transition:.2s}
+.btn:hover{filter:brightness(.95)}
+.btn.outline{background:#fff;color:var(--pri)}
+.btn.ghost{border-color:transparent;background:transparent;color:var(--pri)}
+.dash-card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.dash-grid{display:grid;grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:14px;margin-top:14px}
+.kpi{display:flex;flex-direction:column;gap:6px}
+.kpi strong{font-size:13px;color:#333}
+.kpi .num{font-size:30px}
+.mut{color:var(--mut)}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;border-bottom:1px solid #eee;text-align:left;font-size:14px}
+th{white-space:nowrap;font-weight:600;color:#333}
+.tbl-actions{display:flex;gap:6px}
+.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#eef; font-size:12px}
+
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.col{flex:1 1 320px}
+
+.form{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:end}
+.fld{display:flex;flex-direction:column;gap:6px}
+.fld label{font-size:12px;color:#333}
+.fld input,.fld select{padding:10px;border:1px solid #ddd;border-radius:10px;font:inherit}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.35);padding:18px}
+.modal.open{display:flex}
+.modal .box{background:#fff;border-radius:16px;min-width:300px;max-width:96vw;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+
+.tag{background:#f3f3f8;border:1px dashed #d7d7ea;border-radius:8px;padding:6px 8px;font-size:12px;color:#333}
+.chip{display:inline-flex;align-items:center;gap:6px;background:#faf7ff;border:1px solid #e9dbff;border-radius:999px;padding:6px 10px;font-size:12px;color:#5a2c90}
+
+.divider{height:1px;background:#eee;margin:12px 0}
